@@ -1,0 +1,5 @@
+[00ec3634] core libvlc: VLC wird mit dem Standard-Interface ausgeführt. Benutzen Sie 'cvlc', um VLC ohne Interface zu verwenden.
+[02bf855c] [02cbdd94] mpgatofixed32 audio converter error: core input error: libmad error: bad main_data_begin pointerES_OUT_SET_(GROUP_)PCR  is called too late (pts_delay increased to 300 ms)
+
+[02cbdd94] core input error: ES_OUT_RESET_PCR called
+[02bf855c] mpgatofixed32 audio converter error: libmad error: bad main_data_begin pointer

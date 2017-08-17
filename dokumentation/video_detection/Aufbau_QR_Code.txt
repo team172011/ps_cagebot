@@ -1,0 +1,16 @@
+Aufbau der QR-Codes:
+	KATEGORIE <nummer>
+
+Definitionen:
+	KATEGORIE	:= 	(COMMAND|PERSON|MATERIAL)
+
+	<nummer> 	:= 	[0:9999] 	#PERSON (patients)
+				[10000:19999] 	#PERSON (employee)
+				[20000:29999]	#MATERIAL
+				[30000:39999])	#COMMAND
+
+Beispiele:
+
+PERSON 1 -> Patient
+PERSON 100001 -> Angestellter
+COMMAND 30001 -> Befehl (z.B. halte an, drehe um etc.)

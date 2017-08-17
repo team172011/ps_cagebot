@@ -1,0 +1,26 @@
+;(Do not import just samples/documentation);
+
+SHOW DATABASES;
+USE 'database';
+
+SHOW TABLES;
+DESCRIBE 'table';
+
+ALTER TABLE 'table' ADD 'column' <type>
+INSERT INTO 'table' ('column') VALUES('value');
+UPDATE 'table' SET 'line'='value' WHERE ...
+SHOW FULL COLUMS FROM consumption
+
+- export schema 
+mysqldump -u root -p ps_cagebot > schema.sql
+
+- import schema
+mysql -u root -p ps_cagebot < schema.sql
+
+- show all Tables with column description
+show full columns from materials; show full columns from patients; show full columns from employee; show full columns from consumption;
+
+- user cagebot:
+CREATE USER 'cagebot'@'localhost' IDENTIFIED BY 'ps_cagebot2017';
+CREATE USER 'cagebot'@'%' IDENTIFIED BY 'ps_cagebot2017';
+GRANT ALL PRIVILEGES ON * . * TO 'cagebot'@'localhost';

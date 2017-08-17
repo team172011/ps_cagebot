@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\VideoLAN\VLC\vlc.exe" --play-and-exit --qt-start-minimized %1
